@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشغل Spotify - تشغيل البلايليست</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <i class="fab fa-spotify"></i>
+                <h1>مشغل Spotify</h1>
+            </div>
+            <p class="subtitle">أدخل رابط البلايليست لتشغيل الموسيقى</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Input Section -->
+            <div class="input-section">
+                <div class="section-title">
+                    <i class="fas fa-link"></i>
+                    <h2>أدخل رابط Spotify</h2>
+                </div>
+                
+                <div class="input-group">
+                    <label for="spotifyUrl"><i class="fas fa-music"></i> رابط البلايليست</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="spotifyUrl" placeholder="https://open.spotify.com/playlist/...">
+                        <i class="fas fa-headphones-alt"></i>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="embedCode"><i class="fas fa-code"></i> كود التضمين (اختياري)</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="embedCode" placeholder="<iframe src='https://open.spotify.com/embed/...'>">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+
+                <button class="btn" id="loadPlaylist">
+                    <i class="fas fa-play-circle"></i>
+                    تشغيل
+                </button>
+
+                <!-- Messages -->
+                <div class="error-message" id="errorMessage"></div>
+                <div class="success-message" id="successMessage"></div>
+            </div>
+
+            <!-- Player Section -->
+            <div class="player-section">
+                <div class="section-title">
+                    <i class="fas fa-play-circle"></i>
+                    <h2>المشغل</h2>
+                </div>
+
+                <!-- Spotify Embed -->
+                <div id="spotifyPlayerContainer">
+                    <div class="placeholder">
+                        <i class="fas fa-info-circle"></i>
+                        <p>أدخل رابط Spotify أعلاه لبدء التشغيل</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>© 2024 مشغل Spotify | هذا الموقع غير رسمي ولا ينتمي لـ Spotify</p>
+                    <p class="copyright">جميع الحقوق محفوظة لأصحابها</p>
+                    <p class="creator">تم إنشاء الموقع بواسطة [Mohamed Abd Elsadek]</p>
+                </div>
+                
+                <div class="social-media">
+                    <h3>تابعني على:</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/abdelsadek7" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                       
+                        <a href="https://linkedin.com/in/mohamed-abd-el-sadek-15253b357" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://instagram.com/3bd_elsadek_7" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100069292083808" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
