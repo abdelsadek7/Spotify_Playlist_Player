@@ -19,7 +19,7 @@ The playlist is embedded using Spotify’s official embed player, providing a sm
 - Spotify Embed Player  
 
 ## 🔹 How to Use
-1. Open the website.
+1. Open the website. ( https://spotify-playlist-player.vercel.app )
 2. Paste the Spotify playlist link.
 3. The playlist starts playing directly on the page.
 
