@@ -32,4 +32,4 @@ This project is built for learning and practicing web development and working wi
 
 ---
 
-Made by Mo 🚀
+Made by Mohamed Abd Elsadek 🚀
